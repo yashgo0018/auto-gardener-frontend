@@ -1,20 +1,50 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header class="bg-warning pt-3 pb-2 fixed-top">
+  <h1 class="container text-right"><span class="text-success">Auto</span>Gardener Project <i class="text-info" style="font-size: 20px;">by Yash Goyal</i></h1>
+</header>
+<main>
+  <section class="container mt-5 pt-5 mb-5">
+      <article class="row">
+          <div class="col-lg-4 col-md-12 pt-3">
+              <h3>Data Chart</h3>
+              <hr>
+              <p>
+                  This is the data chart for analytics.
+                  Data collected by auto gardener hardware made by Yash Goyal.
+              </p>
+          </div>
+          <div *ngIf="LineChart" class="col-lg-8 col-md-12"> 
+            <canvas id="linechart"></canvas>
+          </div>
+      </article>
+  </section>
+  <section class="bg-success text-center text-light mt-5 mb-5 pt-5 pb-5">
+      <h2>About The Creator</h2>
+      <article class="row">
+          <article class="col-md-4"></article>
+          <article class="col-md-4">
+              <hr>
+              <img 
+              src="assets/images/1.jpg" 
+              class="rounded img-thumbnail" 
+              width="250px"><br><br>
+              <h4>Yash Goyal</h4>
+              <h5>Web Developer, Programmer</h5>
+          </article>
+          <article class="col-md-4"></article>
+      </article>
+  </section>
+  <section id="about-auto-gardener" class="container mb-5">
+      <app-about></app-about>
+  </section>
+  <section id="about-auto-gardener" class="bg-info pt-2 pb-2">
+      <div class="container">
+          <h2 class="text-center" style="margin-bottom: 0;">Project Galllery</h2>
+          <hr>
+      </div>
+  </section>
+</main>
 
+<!--footer section-->
+<footer class="text-center pt-2 pb-1 bg-dark">
+  <h3 class="text-light">Website designed and developed by Yash Goyal.</h3>
+</footer>
