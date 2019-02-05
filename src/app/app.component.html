@@ -1,46 +1,50 @@
 <header class="bg-warning pt-3 pb-2 fixed-top">
-  <h1 class="container text-right"><span class="text-success">Auto</span>Gardener Project <i class="text-info" style="font-size: 20px;">by Yash Goyal</i></h1>
+  <h1 class="container text-right">
+    <span class="text-success">Auto</span>Gardener Project
+    <i class="text-info" style="font-size: 20px;">by Yash Goyal</i>
+  </h1>
 </header>
 <main>
   <section class="container mt-5 pt-5 mb-5">
-      <article class="row">
-          <div class="col-lg-4 col-md-12 pt-3">
-              <h3>Data Chart</h3>
-              <hr>
-              <p>
-                  This is the data chart for analytics.
-                  Data collected by auto gardener hardware made by Yash Goyal.
-              </p>
-          </div>
-          <div *ngIf="LineChart" class="col-lg-8 col-md-12"> 
-            <canvas id="linechart"></canvas>
-          </div>
-      </article>
+    <article class="row">
+      <div class="col-lg-4 col-md-12 pt-3">
+        <h3>Data Chart</h3>
+        <hr />
+        <p>
+          This is the data chart for analytics. Data collected by auto gardener
+          hardware made by Yash Goyal.
+        </p>
+      </div>
+      <div *ngIf="LineChart" class="col-lg-8 col-md-12">
+        <canvas id="linechart"></canvas>
+      </div>
+    </article>
   </section>
   <section class="bg-success text-center text-light mt-5 mb-5 pt-5 pb-5">
-      <h2>About The Creator</h2>
-      <article class="row">
-          <article class="col-md-4"></article>
-          <article class="col-md-4">
-              <hr>
-              <img 
-              src="assets/images/1.jpg" 
-              class="rounded img-thumbnail" 
-              width="250px"><br><br>
-              <h4>Yash Goyal</h4>
-              <h5>Web Developer, Programmer</h5>
-          </article>
-          <article class="col-md-4"></article>
+    <h2>About The Creator</h2>
+    <article class="row">
+      <article class="col-md-4"></article>
+      <article class="col-md-4">
+        <hr />
+        <img
+          src="assets/images/1.jpg"
+          class="rounded img-thumbnail"
+          width="250px"
+        /><br /><br />
+        <h4>Yash Goyal</h4>
+        <h5>Web Developer, Programmer</h5>
       </article>
+      <article class="col-md-4"></article>
+    </article>
   </section>
   <section id="about-auto-gardener" class="container mb-5">
-      <app-about></app-about>
+    <app-about></app-about>
   </section>
   <section id="about-auto-gardener" class="bg-info pt-2 pb-2">
-      <div class="container">
-          <h2 class="text-center" style="margin-bottom: 0;">Project Galllery</h2>
-          <hr>
-      </div>
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 0;">Project Galllery</h2>
+      <hr />
+    </div>
   </section>
 </main>
 
@@ -48,3 +52,15 @@
 <footer class="text-center pt-2 pb-1 bg-dark">
   <h3 class="text-light">Website designed and developed by Yash Goyal.</h3>
 </footer>
+
+<form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name"/></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email"/></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
